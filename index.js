@@ -39,6 +39,13 @@ function render(resumeObject) {
 			e.endDateYear = 'Present'
 		}
 	});
+	_.each(resumeObject.awards, function(e){
+		if(e.date) {
+			e.date = e.date.substr(0, 4);
+		}  else {
+			e.date = undefined;
+		}
+	});
 	if(resumeObject.basics && resumeObject.basics.email) {
 		resumeObject.basics.gravatar = gravatar.url(resumeObject.basics.email, {
 			'size': '100',

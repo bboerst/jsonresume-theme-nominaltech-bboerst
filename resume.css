@@ -13,12 +13,20 @@ h1 {
 	font-weight: 700;
 }
 
+h3 {
+	margin-top: 10px;
+}
+
 h2,h3 {
 	font-weight: 300;
 }
 
 main {
 	padding: 20px 0;
+}
+
+.title {
+	margin-top: 10px;
 }
 
 .vr {
@@ -51,6 +59,12 @@ section#header .title .vr {
 	}
 	section#header .title .vr {
 		display: inline;
+	}
+	.col-sm-3 {
+    	width: 15%;
+	}
+	.col-sm-9 {
+    	width: 85%;
 	}
 }
 

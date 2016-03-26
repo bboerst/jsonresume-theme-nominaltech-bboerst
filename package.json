@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-nominaltech",
+  "name": "jsonresume-theme-nominaltech-bboerst",
   "version": "0.0.3",
   "description": "Nominaltech JSON Resume theme.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshglendenning/jsonresume-theme-nominaltech"
+    "url": "https://github.com/joshglendenning/jsonresume-theme-nominaltech-bboerst"
   },
   "author": "Josh Glendenning",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshglendenning/jsonresume-theme-nominaltech/issues"
+    "url": "https://github.com/bboerst/jsonresume-theme-nominaltech-bboerst/issues"
   },
-  "homepage": "https://github.com/joshglendenning/jsonresume-theme-nominaltech",
+  "homepage": "https://github.com/bboerst/jsonresume-theme-nominaltech-bboerst",
   "dependencies": {
     "gravatar": "^1.0.6",
     "lodash": "^2.4.1",

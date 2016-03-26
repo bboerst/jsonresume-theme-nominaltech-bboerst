@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{basics.firstName}} {{basics.lastName}}</title>
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="http://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet">
 		<style>
 			{{{css}}}
 		</style>
@@ -22,21 +22,7 @@
 					<h2 class='vr'></h2>
 					<h2>{{basics.label}}</h2>
 				</div>
-				<div class="col-sm-3 col-xs-12 text-center photo">
-					{{#basics.gravatar}}
-					<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="{{basics.gravatar}}">
-					{{/basics.gravatar}}
-				</div>
-				</section>
-				<hr style="color: #ccc; height: 4px;" />
-				<section id='about' class="row">
-				<header class="col-sm-3">
-				<h3>About</h3>
-				</header>
-				<div class="col-sm-9">
-					{{#basics.summary}}
-					<p>{{basics.summary}}</p>
-					{{/basics.summary}}
+				<div class="pull-right">
 					{{#basics.website}}
 					<strong>Website:</strong> <a href="{{basics.website}}">{{basics.website}}</a> <br />
 					{{/basics.website}}
@@ -71,6 +57,20 @@
 						{{/basics.profiles}}
 						</section>
 					{{/basics.profiles.length}}
+				</div>
+				</section>
+				<hr style="color: #ccc; height: 4px;" />
+				<section id='summary' class="row">
+				<header class="col-sm-3">
+				<h3>Summary</h3>
+				</header>
+				<div class="col-sm-9">
+					<div class="details">
+						<p></p>
+						{{#basics.summary}}
+							<p>{{basics.summary}}</p>
+						{{/basics.summary}}
+					</div>
 				</div>
 				</section>
 				<hr />
@@ -126,6 +126,32 @@
 				</section>
 				<hr />
 				{{/education.length}}
+
+				{{#awards.length}}
+				<section id='awards' class="row">
+				<header class="col-sm-3">
+				<h3>Certifications</h3>
+				</header>
+				<div class="col-sm-9">
+					<div class="details">
+						{{#awards}}
+						<h3>{{title}}<span class="date pull-right">{{date}}</span></h3>
+						<strong>{{educationDetail}}</strong>
+						<p>{{summary}}</p>
+						{{#courses.length}}
+						<ul class="courses">
+							{{#courses}}
+							<li>{{.}}</li>
+							{{/courses}}
+						</ul>
+						{{/courses.length}}
+						{{/awards}}
+					</div>
+				</div>
+				</section>
+				<hr />
+				{{/awards.length}}
+
 				{{#skills.length}}
 				<section id='skills' class="row">
 				<header class="col-sm-3">
