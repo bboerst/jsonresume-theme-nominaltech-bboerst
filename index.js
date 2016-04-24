@@ -2,14 +2,15 @@ var fs = require('fs');
 var gravatar = require('gravatar');
 var _ = require('lodash')
 var Mustache = require('mustache');
+var moment = require('moment');
 
 function render(resumeObject) {
 
 
 	_.each(resumeObject.work, function(w){
-		w.startDateYear = w.startDate.substr(0,4);
+		w.startDateYear =  moment(w.startDate).format('MMMM YYYY');
 		if(w.endDate) {
-			w.endDateYear = w.endDate.substr(0,4);
+			w.endDateYear = moment(w.endDate).format('MMMM YYYY');
 		} else { 
 			w.endDateYear = 'Present'
 		}
@@ -41,7 +42,7 @@ function render(resumeObject) {
 	});
 	_.each(resumeObject.awards, function(e){
 		if(e.date) {
-			e.date = e.date.substr(0, 4);
+			e.date = moment(e.date).format('MMMM YYYY');
 		}  else {
 			e.date = undefined;
 		}
