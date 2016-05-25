@@ -79,6 +79,9 @@ section#header .title .vr {
 	.col-sm-9 {
     	width: 85%;
 	}
+	.col-sm-6 {
+		width: 25%;
+	}
 }
 
 section#skills .details {
@@ -102,6 +105,10 @@ section#skills .details {
 	line-height: 0px;		
 }
 
+ul.skillslist {
+    -webkit-padding-start: 25px;
+}
+
 
 /* Fix for print */
 @media print {
@@ -122,6 +129,9 @@ section#skills .details {
 	h3 {
 		font-size: 19px;
 	}
+	h4 {
+		font-size: 13px;
+	}
 
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 		float: left;
@@ -137,6 +147,7 @@ section#skills .details {
 	}
 	.col-sm-9 {
 		width: 75%;
+		padding: 0px;
 	}
 	.col-sm-8 {
 		width: 66.66666666666666%;
@@ -145,7 +156,8 @@ section#skills .details {
 		width: 58.333333333333336%;
 	}
 	.col-sm-6 {
-		width: 50%;
+		width: 25%;
+		padding: 0 5px;
 	}
 	.col-sm-5 {
 		width: 41.66666666666667%;
@@ -154,7 +166,7 @@ section#skills .details {
 		width: 33.33333333333333%;
 	}
 	.col-sm-3 {
-		width: 25%;
+		width: 21%;
 	}
 	.col-sm-2 {
 		width: 16.666666666666664%;
@@ -163,4 +175,7 @@ section#skills .details {
 		width: 8.333333333333332%;
 	}
 
+	ul.skillslist {
+	    -webkit-padding-start: 15px;
+	}
 }

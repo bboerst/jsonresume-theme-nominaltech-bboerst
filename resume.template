@@ -59,7 +59,9 @@
 					{{/basics.profiles.length}}
 				</div>
 				</section>
+
 				<hr style="color: #ccc; height: 4px;" />
+				
 				<section id='summary' class="row">
 				<header class="col-sm-3">
 				<h3>Summary</h3>
@@ -71,7 +73,75 @@
 					{{/basics.summary}}
 				</div>
 				</section>
+
 				<hr />
+
+				<section id="skills" class="row">
+				<header class="col-sm-3">
+				<h3>Skill Highlights</h3>
+				</header>
+				<div class="col-sm-9">
+					<div class="row">
+					<div class="col-sm-6">
+						<div class="name">
+							<h4 style="margin: 3px 0;">DevOps</h4>
+						</div>
+						<ul class="skillslist">
+							<li>AWS CodeDeploy / CodePipeline</li>
+							<li>AWS ElasticBeanstalk / Opsworks</li>
+							<li>Atlassian Bamboo</li>
+							<li>TFS Build / vNext</li>
+							<li>Git / Gitflow</li>
+							<li>Chef Server / Chef Solo / Chef Zero</li>
+							<li>Powershell / Batch / Bash / Python</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4 style="margin: 3px 0;">Operations</h4>
+						</div>
+						<ul class="skillslist">
+							<li>AWS (Expert)</li>
+							<li>VMWare</li>
+							<li>Citrix XenApp</li>
+							<li>Networking (Expert)</li>
+							<li>Windows Administration (Expert)</li>
+							<li>Linux Administration (Intermediate)</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4 style="margin: 3px 0;">Development</h4>
+						</div>
+						<ul class="skillslist">
+							<li>C# .NET</li>
+							<li>PHP</li>
+							<li>Selenium</li>
+							<li>Ruby / Chef</li>
+							<li>REST API</li>
+							<li>Service Bus (Mulesoft)</li>
+							<li>Software Architecture</li>
+							<li>MS SQL / MySQL / Oracle</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="name">
+							<h4 style="margin: 3px 0;">Soft Skills</h4>
+						</div>
+						<ul class="skillslist">
+							<li>Leadership</li>
+							<li>Entrepreneurial Mindset</li>
+							<li>Big-Picture Thinker</li>
+							<li>Personable and Affable</li>
+							<li>INTJ</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<hr />
+
 				{{#work.length}}
 				<section id='work' class="row">
 				<header class="col-sm-3">
@@ -98,32 +168,7 @@
 				</div>
 				</section>
 				<hr />
-				{{/work.length}} 
-
-				{{#education.length}}
-				<section id='education' class="row">
-				<header class="col-sm-3">
-				<h3>Education</h3>
-				</header>
-				<div class="col-sm-9">
-					<div class="details">
-						{{#education}}
-						<h3>{{institution}}<span class="date pull-right">{{startDateYear}}{{endDateYear}}</span></h3>
-						<strong>{{educationDetail}}</strong>
-						<p>{{summary}}</p>
-						{{#courses.length}}
-						<ul class="courses">
-							{{#courses}}
-							<li>{{.}}</li>
-							{{/courses}}
-						</ul>
-						{{/courses.length}}
-						{{/education}}
-					</div>
-				</div>
-				</section>
-				<hr />
-				{{/education.length}}
+				{{/work.length}}
 
 				{{#awards.length}}
 				<section id='awards' class="row">
@@ -149,6 +194,31 @@
 				</section>
 				<hr />
 				{{/awards.length}}
+
+				{{#education.length}}
+				<section id='education' class="row">
+				<header class="col-sm-3">
+				<h3>Education</h3>
+				</header>
+				<div class="col-sm-9">
+					<div class="details">
+						{{#education}}
+						<h3>{{institution}}<span class="date pull-right">{{startDateYear}}{{endDateYear}}</span></h3>
+						<strong>{{educationDetail}}</strong>
+						<p>{{summary}}</p>
+						{{#courses.length}}
+						<ul class="courses">
+							{{#courses}}
+							<li>{{.}}</li>
+							{{/courses}}
+						</ul>
+						{{/courses.length}}
+						{{/education}}
+					</div>
+				</div>
+				</section>
+				<hr />
+				{{/education.length}}
 
 				{{#skills.length}}
 				<section id='skills' class="row">
@@ -176,6 +246,7 @@
 				</section>
 				<hr />
 				{{/skills.length}}
+
 				{{#volunteer.length}}
 				<section id='volunteer' class="row">
 				<header class="col-sm-3">
@@ -203,6 +274,7 @@
 				</section>
 				<hr />
 				{{/volunteer.length}}
+
 				{{#languages.length}}
 				<section id='languages' class="row">
 				<header class="col-sm-3">
@@ -222,6 +294,7 @@
 				</section>
 				<hr />
 				{{/languages.length}}
+
 				{{#references.length}}
 				<section id='references' class="row">
 				<header class="col-sm-3">
@@ -239,6 +312,7 @@
 				</div>
 				</section>
 				{{/references.length}}
+
 				<footer></footer>
 			</div>
 			</main>
