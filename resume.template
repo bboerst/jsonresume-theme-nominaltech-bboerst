@@ -87,12 +87,17 @@
 							<h4 style="margin: 3px 0;">DevOps</h4>
 						</div>
 						<ul class="skillslist">
+							<li>Hashicorp Terraform</li>
+							<li>Hashicorp Vault</li>
+							<li>Hashicorp Packer</li>
+							<li>Docker / Containers</li>
+							<li>Amazon ECS</li>
 							<li>AWS CodeDeploy / CodePipeline</li>
 							<li>AWS ElasticBeanstalk / Opsworks</li>
-							<li>Atlassian Bamboo</li>
-							<li>TFS Build / vNext</li>
-							<li>Git / Gitflow</li>
 							<li>Chef Server / Chef Solo / Chef Zero</li>
+							<li>Atlassian Bamboo</li>
+							<li>JetBrains TeamCity</li>
+							<li>TFS Build / vNext</li>
 							<li>Powershell / Batch / Bash / Python</li>
 						</ul>
 					</div>
@@ -104,9 +109,9 @@
 							<li>AWS (Expert)</li>
 							<li>VMWare</li>
 							<li>Citrix XenApp</li>
-							<li>Networking (Expert)</li>
-							<li>Windows Administration (Expert)</li>
-							<li>Linux Administration (Intermediate)</li>
+							<li>Network Design</li>
+							<li>Windows Administration and Automation</li>
+							<li>Linux Administration and Automation</li>
 						</ul>
 					</div>
 					<div class="col-sm-6">
@@ -114,6 +119,7 @@
 							<h4 style="margin: 3px 0;">Development</h4>
 						</div>
 						<ul class="skillslist">
+							<li>Git / Gitflow</li>
 							<li>C# .NET</li>
 							<li>PHP</li>
 							<li>Selenium</li>
